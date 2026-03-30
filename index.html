@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Sudhevan Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <label class="theme-toggle" title="Toggle theme">
+    <input type="checkbox" id="themeSwitch">
+    <span class="toggle-track">
+      <i class="fas fa-sun toggle-icon sun"></i>
+      <i class="fas fa-moon toggle-icon moon"></i>
+      <span class="toggle-thumb"></span>
+    </span>
+  </label>
+</nav>
+
+<section class="hero">
+  <h1>Hi, I'm Sudhevan</h1>
+  <h2 class="typing">Web Developer</h2>
+</section>
+
+<section id="about" class="about reveal">
+  <h2>About Me</h2>
+  <p>I am a passionate developer skilled in Python, Django, HTML, and CSS. I build real-world applications and love creating modern UI designs.</p>
+</section>
+
+<section id="skills" class="skills reveal">
+  <h2>Skills</h2>
+  <span class="reveal-left">HTML</span>
+  <span class="reveal-left" style="transition-delay:0.1s">CSS</span>
+  <span class="reveal-right" style="transition-delay:0.2s">Python</span>
+  <span class="reveal-right" style="transition-delay:0.3s">Django</span>
+</section>
+
+<section id="projects" class="projects">
+  <div class="card reveal-left">Expense Tracker</div>
+  <div class="card reveal" style="transition-delay:0.15s">Doctor Booking System</div>
+  <div class="card reveal-right" style="transition-delay:0.3s">Portfolio Website</div>
+</section>
+
+<div class="socials reveal">
+  <a href="https://www.linkedin.com/in/sudhevanyuvaraj/" target="_blank">
+    <i class="fab fa-linkedin"></i>
+    <span>LinkedIn</span>
+  </a>
+  <a href="https://github.com/Sudhevan01" target="_blank">
+    <i class="fab fa-github"></i>
+    <span>GitHub</span>
+  </a>
+</div>
+
+<section id="contact" class="contact reveal">
+  <h2>Contact Me</h2>
+  <input type="text" placeholder="Your Name"><br>
+  <input type="email" placeholder="Your Email"><br>
+  <textarea placeholder="Message"></textarea><br>
+  <button>Send</button>
+</section>
+
+<footer>
+  <p>Thank You.</p>
+</footer>
+
+<script>
+  const themeSwitch = document.getElementById('themeSwitch');
+
+  // Load saved preference
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+    themeSwitch.checked = true;
+  }
+
+  themeSwitch.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
+ 
