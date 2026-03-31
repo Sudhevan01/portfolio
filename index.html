@@ -1,105 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <title>Sudhevan Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudhevan | Web Developer</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<nav>
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-  <label class="theme-toggle" title="Toggle theme">
-    <input type="checkbox" id="themeSwitch">
-    <span class="toggle-track">
-      <i class="fas fa-sun toggle-icon sun"></i>
-      <i class="fas fa-moon toggle-icon moon"></i>
-      <span class="toggle-thumb"></span>
-    </span>
-  </label>
-</nav>
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar">
+    <div class="nav-logo">Sudhevan Y</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Hamburger for mobile -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
 
-<section class="hero">
-  <h1>Hi, I'm Sudhevan</h1>
-  <h2 class="typing">Web Developer</h2>
-</section>
+  <!-- ======= HERO SECTION ======= -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Sudhevan</h1>
+      <h2 class="hero-title">MCA Student | Developer | Freelancer</h2>
+      <p class="hero-tagline">MCA student passionate about Data Science and Web Development.</p>
 
-<section id="about" class="about reveal">
-  <h2>About Me</h2>
-  <p>I am a passionate developer skilled in Python, Django, HTML, and CSS. I build real-world applications and love creating modern UI designs.</p>
-</section>
+      <!-- Social Links -->
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/sudhevanyuvaraj/" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <i class="fab fa-linkedin-in"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Sudhevan01" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
 
-<section id="skills" class="skills reveal">
-  <h2>Skills</h2>
-  <span class="reveal-left">HTML</span>
-  <span class="reveal-left" style="transition-delay:0.1s">CSS</span>
-  <span class="reveal-right" style="transition-delay:0.2s">Python</span>
-  <span class="reveal-right" style="transition-delay:0.3s">Django</span>
-</section>
+    <!-- Animated code terminal illustration -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="code-window">
+        <!-- Window chrome -->
+        <div class="code-titlebar">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+          <span class="code-filename">portfolio.py</span>
+        </div>
+        <!-- Code lines -->
+        <div class="code-body">
+          <div class="code-line line-1">
+            <span class="kw">class</span>
+            <span class="cls"> Sudhevan</span>
+            <span class="punc">:</span>
+          </div>
+          <div class="code-line line-2">
+            <span class="indent"></span>
+            <span class="kw">def </span>
+            <span class="fn">__init__</span>
+            <span class="punc">(self):</span>
+          </div>
+          <div class="code-line line-3">
+            <span class="indent2"></span>
+            <span class="var">self</span>
+            <span class="punc">.role = </span>
+            <span class="str">"Developer"</span>
+          </div>
+          <div class="code-line line-4">
+            <span class="indent2"></span>
+            <span class="var">self</span>
+            <span class="punc">.skills = [</span>
+          </div>
+          <div class="code-line line-5">
+            <span class="indent3"></span>
+            <span class="str">"Python"</span>
+            <span class="punc">, </span>
+            <span class="str">"Django"</span>
+            <span class="punc">,</span>
+          </div>
+          <div class="code-line line-6">
+            <span class="indent3"></span>
+            <span class="str">"HTML"</span>
+            <span class="punc">, </span>
+            <span class="str">"CSS"</span>
+          </div>
+          <div class="code-line line-7">
+            <span class="indent2"></span>
+            <span class="punc">]</span>
+          </div>
+          <div class="code-line line-8">
+            <span class="indent"></span>
+            <span class="kw">def </span>
+            <span class="fn">build</span>
+            <span class="punc">(self):</span>
+          </div>
+          <div class="code-line line-9">
+            <span class="indent2"></span>
+            <span class="kw">return </span>
+            <span class="str">"Great Apps 🚀"</span>
+          </div>
+          <div class="code-line line-10">
+            <span class="caret">▌</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<section id="projects" class="projects">
-  <div class="card reveal-left">Expense Tracker</div>
-  <div class="card reveal" style="transition-delay:0.15s">Doctor Booking System</div>
-  <div class="card reveal-right" style="transition-delay:0.3s">Portfolio Website</div>
-</section>
+    <!-- Scroll hint arrow -->
+    <a href="#about" class="scroll-down" aria-label="Scroll to About">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
 
-<div class="socials reveal">
-  <a href="https://www.linkedin.com/in/sudhevanyuvaraj/" target="_blank">
-    <i class="fab fa-linkedin"></i>
-    <span>LinkedIn</span>
-  </a>
-  <a href="https://github.com/Sudhevan01" target="_blank">
-    <i class="fab fa-github"></i>
-    <span>GitHub</span>
-  </a>
-</div>
+  <!-- ======= ABOUT SECTION ======= -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-card">
+        <div class="about-avatar">
+          <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="about-text">
+          <p>
+            Hi! I'm <strong>Sudhevan</strong>, an MCA student with a strong interest in Data Science and Web Development. I enjoy learning new technologies and building simple, practical projects that help me improve my skills. I like working with both data and web applications, and I am always curious to explore how things work in real-world systems.
+          </p>
+          <p>
+            I have basic knowledge of Python, Django, HTML, and CSS, and I am currently working on improving my development skills by creating projects. As a fresher, I am looking for opportunities where I can learn, grow, and gain real-world experience while contributing my knowledge and enthusiasm.
+          </p>
+          <div class="about-tags">
+            <span class="tag">MCA Student</span>
+            <span class="tag">Developer</span>
+            <span class="tag">Open to Internships</span>
+            <span class="tag">Open to work</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="contact" class="contact reveal">
-  <h2>Contact Me</h2>
-  <input type="text" placeholder="Your Name"><br>
-  <input type="email" placeholder="Your Email"><br>
-  <textarea placeholder="Message"></textarea><br>
-  <button>Send</button>
-</section>
+  <!-- ======= SKILLS SECTION ======= -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
 
-<footer>
-  <p>Thank You.</p>
-</footer>
+      <!-- Technical Skills -->
+      <h3 class="skills-subtitle">Technical Skills</h3>
+      <div class="skills-grid">
 
-<script>
-  const themeSwitch = document.getElementById('themeSwitch');
+        <div class="skill-card">
+          <i class="fab fa-html5 skill-icon"></i>
+          <span>HTML</span>
+        </div>
 
-  // Load saved preference
-  if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark');
-    themeSwitch.checked = true;
-  }
+        <div class="skill-card">
+          <i class="fab fa-css3-alt skill-icon"></i>
+          <span>CSS</span>
+        </div>
 
-  themeSwitch.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
-    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-  });
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.15 });
+        <div class="skill-card">
+          <i class="fab fa-python skill-icon"></i>
+          <span>Python</span>
+        </div>
 
-  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
-    observer.observe(el);
-  });
-</script>
+        <div class="skill-card">
+          <i class="fas fa-layer-group skill-icon"></i>
+          <span>Django</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-database skill-icon"></i>
+          <span>MySQL</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-git-alt skill-icon"></i>
+          <span>Git</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fab fa-github skill-icon"></i>
+          <span>GitHub</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-database skill-icon"></i>
+          <span>Oracle</span>
+        </div>
+
+        <div class="skill-card">
+          <i class="fas fa-code skill-icon"></i>
+          <span>C++</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======= PROJECTS SECTION ======= -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="images/expense-tracker.png" alt="Expense Tracker screenshot" />
+          </div>
+          <div class="project-header">
+            <i class="fas fa-wallet project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Sudhevan01" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Expense Tracker</h3>
+          <p class="project-desc">
+            A web application to track daily income and expenses. Users can add, categorise,
+            and visualise their spending habits with a clean dashboard interface.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">HTML/CSS</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="images/doctor-booking.png" alt="Doctor Appointment Booking screenshot" />
+          </div>
+          <div class="project-header">
+            <i class="fas fa-hospital-user project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Sudhevan01" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Doctor Appointment Booking</h3>
+          <p class="project-desc">
+            A full-featured booking system where patients can register, browse doctors by
+            speciality, and schedule appointments with real-time slot availability.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Bootstrap</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="images/portfolio.png" alt="Personal Portfolio screenshot" />
+          </div>
+          <div class="project-header">
+            <i class="fas fa-code project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/Sudhevan01" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <p class="project-desc">
+            A fully responsive personal portfolio built with pure HTML and CSS. Features
+            a dark theme, clean typography, and a professional layout — no JavaScript required.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">Responsive</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= RESUME SECTION ======= -->
+  <section id="resume" class="resume section">
+    <div class="container resume-container">
+      <h2 class="section-title">My <span class="accent">Resume</span></h2>
+      <p class="resume-desc">
+        Interested in working together? Download my resume to learn more about my
+        experience, education, and skills.
+      </p>
+      <a href="return_ticket.pdf" class="btn-resume" download="Sudhevan_Resume.pdf">
+        <i class="fas fa-download"></i>
+        Download Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT SECTION ======= -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="contact-desc">
+        I'm open to internship opportunities and collaborations !
+      </p>
+
+      <div class="contact-cards">
+
+        <!-- Email -->
+        <a href="mailto:sudhevany@gmail.com" class="contact-card">
+          <div class="contact-icon-wrap">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h4>Email</h4>
+          <p>sudhevany@gmail.com</p>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/sudhevanyuvaraj/" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon-wrap">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <h4>LinkedIn</h4>
+          <p>sudhevanyuvaraj</p>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/Sudhevan01" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <div class="contact-icon-wrap">
+            <i class="fab fa-github"></i>
+          </div>
+          <h4>GitHub</h4>
+          <p>Sudhevan01</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <p>Designed &amp; Built by <span class="accent">Sudhevan</span></p>
+    <p class="footer-copy">&copy; 2026 All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
- 
