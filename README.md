@@ -1,32 +1,25 @@
-# 🚧 Portfolio Website (Under Construction)
+# 🌐 Personal Portfolio Website
 
 ## 👋 Welcome!
 
 Hi, I’m **Sudhevan**
-This is my personal portfolio website — currently under development.
+This is my personal portfolio website showcasing my skills, projects, and work.
 
 ---
 
-## ⚠️ Status
+## 🚀 Live Website
 
-🚧 This project is **still in progress**
-Some features and sections are not completed yet.
-
----
-
-## 🌐 Live Preview
-
-Coming soon...
+🌍 Live Demo: *(Will be added soon after deployment)*
 
 ---
 
-## 📌 Features (Planned)
+## 📌 Features
 
 * 👨‍💻 About Me section
 * 🛠️ Skills showcase
-* 📂 Projects display
-* 📞 Contact form
-* 🌙 Responsive design
+* 📂 Projects portfolio
+* 📞 Contact section
+* 📱 Fully responsive design
 
 ---
 
@@ -37,18 +30,18 @@ Coming soon...
 
 ---
 
-## 📅 Progress
+## 📅 Project Status
 
-* [x] Basic structure created
-* [ ] UI design improvements
-* [ ] Add projects section
-* [ ] Deploy website
+* [x] Portfolio design completed
+* [x] Sections implemented
+* [ ] Deployment (in progress)
+* [ ] Performance optimization
 
 ---
 
 ## 🚀 Deployment
 
-Will be deployed soon...
+This project will be deployed soon using **Vercel**.
 
 ---
 
@@ -61,8 +54,8 @@ Will be deployed soon...
 
 ## 💬 Note
 
-This portfolio is actively being improved. Stay tuned for updates!
+This portfolio reflects my current skills and will be continuously updated with new projects and improvements.
 
 ---
 
-⭐ Don’t forget to star the repo!
+⭐ If you like this project, feel free to star the repository!
