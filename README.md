@@ -18,7 +18,6 @@ This is my personal portfolio website showcasing my skills, projects, and work.
 * 👨‍💻 About Me section
 * 🛠️ Skills showcase
 * 📂 Projects portfolio
-* 📞 Contact section
 * 📱 Fully responsive design
 
 ---
