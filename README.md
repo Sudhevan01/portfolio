@@ -2,14 +2,17 @@
 
 ## 👋 Welcome!
 
-Hi, I’m **Sudhevan**
-This is my personal portfolio website showcasing my skills, projects, and work.
+Hi, I’m **Sudhevan** 👨‍💻
+An MCA student passionate about **Data Science and Web Development**.
+
+This is my personal portfolio website where I showcase my skills, projects, and learning journey.
 
 ---
 
 ## 🚀 Live Website
 
-🌍 Live Demo: *(Will be added soon after deployment)*
+🌍 **Live Demo:**
+👉 https://portfolio-pi-lac-r382us7r99.vercel.app/
 
 ---
 
@@ -19,6 +22,7 @@ This is my personal portfolio website showcasing my skills, projects, and work.
 * 🛠️ Skills showcase
 * 📂 Projects portfolio
 * 📱 Fully responsive design
+* ⚡ Fast and lightweight performance
 
 ---
 
@@ -26,6 +30,7 @@ This is my personal portfolio website showcasing my skills, projects, and work.
 
 * HTML
 * CSS
+* JavaScript *(if you used, keep it; otherwise remove)*
 
 ---
 
@@ -33,28 +38,30 @@ This is my personal portfolio website showcasing my skills, projects, and work.
 
 * [x] Portfolio design completed
 * [x] Sections implemented
-* [ ] Deployment (in progress)
-* [ ] Performance optimization
+* [x] Deployment completed 🚀
+* [ ] Performance optimization (ongoing)
 
 ---
 
 ## 🚀 Deployment
 
-This project will be deployed soon using **Vercel**.
+This project is successfully deployed using **Vercel**.
+Any updates pushed to GitHub are automatically deployed.
 
 ---
 
 ## 🤝 Connect with Me
 
-* GitHub: https://github.com/Sudhevan01
-* LinkedIn: https://www.linkedin.com/in/sudhevanyuvaraj/
+* 💻 GitHub: https://github.com/Sudhevan01
+* 🔗 LinkedIn: https://www.linkedin.com/in/sudhevanyuvaraj/
 
 ---
 
 ## 💬 Note
 
-This portfolio reflects my current skills and will be continuously updated with new projects and improvements.
+This portfolio represents my current skills and projects.
+I will continue to improve and update it as I learn new technologies and build more real-world applications.
 
 ---
 
-⭐ If you like this project, feel free to star the repository!
+⭐ If you like this project, feel free to **star the repository**!
