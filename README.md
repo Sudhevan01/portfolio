@@ -30,7 +30,6 @@ This is my personal portfolio website where I showcase my skills, projects, and 
 
 * HTML
 * CSS
-* JavaScript *(if you used, keep it; otherwise remove)*
 
 ---
 
